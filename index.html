@@ -29,19 +29,19 @@
               text-align: center;
               padding: 0.5rem 1rem;
               border-radius: 1rem;
-              font-family: 'Raleway', sans-serif;
+              font-family: 'Be Vietnam', sans-serif;
               font-weight: 300;
               font-size: 1.5rem;
             }
             #component-iuoyr section .nav {
-              font-family: 'Raleway', sans-serif;
+              font-family: 'Be Vietnam', sans-serif;
               font-weight: 300;
               font-size: 1.5rem;
               padding-right: 1rem;
             }
             #component-iuoyr section .logo {
-              font-family: 'Raleway', sans-serif;
-              font-weight: 300;
+              font-family: 'Be Vietnam', sans-serif;
+              font-weight: 400;
               font-size: 2.4rem;
             }
       </style>
@@ -51,25 +51,30 @@
       <div class="primo-component" id="component-emtpm">
         <div>
           <section>
-            <div>
-              <img
-                src="https://github.com/lebombastic/primo-photographer/raw/main/Rectangle%2011.png"
-                alt=""
-              />
-              <img
-                src="https://github.com/lebombastic/primo-photographer/raw/main/Rectangle%2010.png"
-                alt=""
-              />
-              <img
-                src="https://github.com/lebombastic/primo-photographer/raw/main/Rectangle%201.png"
-                alt=""
-              />
-              <!--   -->
+            <div class="images">
+              <div>
+                <img
+                  src="https://github.com/lebombastic/primo-photographer/raw/main/Rectangle%2011.png"
+                  alt=""
+                />
+                <img
+                  src="https://github.com/lebombastic/primo-photographer/raw/main/Rectangle%2010.png"
+                  alt=""
+                />
+                <img
+                  src="https://github.com/lebombastic/primo-photographer/raw/main/Rectangle%201.png"
+                  alt=""
+                />
+              </div>
               <a href="" class="fa fa-angle-right"></a>
             </div>
-            <div class="cont"></div>
+            <div class="cont">
+              <span
+                >Remi’s Photogrophy - this sentence should be inspiring, draw
+                the user in, and capture the photogropher’s style...
+              </span>
+            </div>
           </section>
-          <div class="cont">Hello</div>
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -79,46 +84,109 @@
       <style type="text/css">
         #component-emtpm section {
             display: grid;
-            grid-auto-row: 1fr 1fr;
+            grid-auto-rows: auto;
+            text-align: center;
             margin: 0 auto;
             width: 100%;
             height: 100%;
             padding: 0 2rem;
           }
-            #component-emtpm section div {
+            #component-emtpm section .images {
+              margin-left: auto;
+              margin-right: auto;
               position: relative;
             }
-            #component-emtpm section div img {
+            #component-emtpm section .images img:not(:first-child) {
                 position: absolute;
               }
-            #component-emtpm section div img:nth-child(1) {
-                z-index: 2;
-                left: 41rem;
+            #component-emtpm section .images img:nth-child(1) {
+                z-index: 3;
+                position: relative;
                 top: 1rem;
               }
-            #component-emtpm section div img:nth-child(2) {
-                z-index: 1;
-                left: 39.6rem;
+            #component-emtpm section .images img:nth-child(2) {
+                z-index: 2;
                 top: 2rem;
+                right: 1.2rem;
               }
-            #component-emtpm section div img:nth-child(3) {
-                left: 38.5rem;
-                top: 3rem;
+            #component-emtpm section .images img:nth-child(3) {
+                top: 3.1rem;
+                right: 2.1rem;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
               }
-            #component-emtpm section div a {
-                position: absolute;
-                top: 34rem;
+            #component-emtpm section .images a {
+                position: relative;
+                top: -5rem;
                 font-size: 2rem;
-                color: white;
-                left: 89rem;
-                z-index: 4;
+                color: #ECE7E6;
+                font-weight: 400;
+                left: 23rem;
+                z-index: 3;
                 border-width: 3px;
                 border-radius: 9999px;
                 padding: 0 0.8rem;
               }  #component-emtpm .cont {
-            position: absolute;
-            bottom: 5rem;
+            margin-top: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4rem;
+            width: 61%;
+            position: relative;
+          }  #component-emtpm .cont span {
+              font-family: 'Be Vietnam', sans-serif;
+              font-size: 2rem;
+              font-weight: 300;
+            }
+      </style>
+    </div>
+
+    <div class="block" id="block-rdztm">
+      <div class="primo-component" id="component-rdztm">
+        <div>
+          <section class="h-auto grid row-auto px-2 mt-6">
+            <div class="comp1">
+              <div class="">
+                <div class="">
+                  <h1 class="headline">Conceptual</h1>
+                </div>
+                <div class="text">hello</div>
+                <div></div>
+              </div>
+              <div class="">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <style type="text/css">
+        #component-rdztm section {
+            display: grid;
+            grid-row: auto;
+            background-color: #ECE7E6;
           }
+            #component-rdztm section .comp1 {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 5rem;
+              padding: 2rem 0;
+            }
+            #component-rdztm section .headline {
+              font-size: 40px;
+              color: #444444;
+              font-family: 'Be Vietnam', sans-serif;
+            }
+            #component-rdztm section .headline:after {
+              content: '';
+              position: absolute;
+              top: 7.5rem;
+              left: 0.5rem;
+              width: 50%;
+              border: 1px solid rgba(68, 68, 68, 0.3);
+            }
+            #component-rdztm section .text {
+              padding-top: 1rem;
+            }
       </style>
     </div>
   </body>
