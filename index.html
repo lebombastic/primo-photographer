@@ -142,51 +142,68 @@
 
     <div class="block" id="block-rdztm">
       <div class="primo-component" id="component-rdztm">
-        <div>
-          <section class="h-auto grid row-auto px-2 mt-6">
-            <div class="comp1">
-              <div class="">
-                <div class="">
-                  <h1 class="headline">Conceptual</h1>
-                </div>
-                <div class="text">hello</div>
-                <div></div>
-              </div>
-              <div class="">
-                <img src="" alt="" />
-              </div>
-            </div>
-          </section>
-        </div>
+        <div><section></section></div>
       </div>
       <style type="text/css">
         #component-rdztm section {
             display: grid;
             grid-row: auto;
             background-color: #ECE7E6;
+            margin-top: 3rem;
           }
             #component-rdztm section .comp1 {
               display: grid;
               grid-template-columns: 1fr 1fr;
-              gap: 5rem;
-              padding: 2rem 0;
+              padding: 2rem;
+            }
+            #component-rdztm section .cont {
+              padding-left: 1rem;
             }
             #component-rdztm section .headline {
-              font-size: 40px;
+              font-size: 60px;
               color: #444444;
               font-family: 'Be Vietnam', sans-serif;
+              font-weight: 300;
+              line-height: 80px;
             }
-            #component-rdztm section .headline:after {
-              content: '';
-              position: absolute;
-              top: 7.5rem;
-              left: 0.5rem;
-              width: 50%;
-              border: 1px solid rgba(68, 68, 68, 0.3);
+            #component-rdztm section .under-head {
+              border-width: 1px;
+              border-color: #444444;
+              border-style: dashed;
+              margin-left: 0.3rem;
             }
             #component-rdztm section .text {
               padding-top: 1rem;
+              padding-left: 0.5rem;
+              font-family: 'Be Vietnam', sans-serif;
+              font-weight: 300;
+              color: #444444;
+              width: 49%;
+              padding-bottom: 2rem;
             }
+            #component-rdztm section .images img:nth-child(2) {
+                position: relative;
+                right: 1.3rem;
+                top: 1rem;
+              }
+            #component-rdztm section .images img:nth-child(1) {
+                position: absolute;
+              }
+          #component-rdztm a {
+            padding-left: 0.5rem;
+            font-family: 'Be Vietnam', sans-serif;
+            font-weight: 300;
+          }
+          #component-rdztm a .under-view {
+              border-width: 1px;
+              border-color: #444444;
+              border-style: solid;
+              width: 5rem;
+              margin-left: 0.5rem;
+            }
+          #component-rdztm .comp1:nth-child(1) .images {
+            margin-top: -4.4rem;
+          }
       </style>
     </div>
   </body>
